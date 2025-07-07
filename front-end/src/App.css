@@ -1,0 +1,117 @@
+:root{
+  background-color: rgb(13 17 23);
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.dark .dark\:bg-Pic-dark {
+  background-image: url("./assets/logo_again_curta.png");
+  background-size: 100% 100%;
+}
+
+.dark .dark\:bg-Pic-dark-longa {
+  background-image: url("./assets/logo_again_grande.png");
+  background-size: 100% 100%;
+}
+
+.bg-Pic {
+  background-image: url("./assets/logo_again_curta_dark.png");
+  background-size: 100% 100%;
+}
+
+.bg-Pic-longa {
+  background-image: url("./assets/logo_again_grande_dark.png");
+  background-size: 100% 100%;
+}
+
+.ant-switch:not(.ant-switch-checked) {
+  background-color: #aaaaaa; /* Your custom color when not checked */
+}
+
+.custom-switch {
+  width: 64px !important; /* Ajuste conforme necessário */
+  height: 32px !important; /* Ajuste conforme necessário */
+}
+
+.custom-switch .ant-switch-handle {
+  width: 28px !important; /* Ajuste conforme necessário */
+  height: 28px !important; /* Ajuste conforme necessário */
+  top: 2px !important; /* Ajuste para centralizar verticalmente */
+  border-radius: 100% !important; /* Garante que a bola central seja redonda */
+}
+
+.custom-switch .ant-switch-inner {
+  font-size: 16px; /* Ajuste o tamanho do texto se necessário */
+}
+
+:where(.css-dev-only-do-not-override-3rel02).ant-switch
+  .ant-switch-handle::before {
+  position: absolute;
+  top: 0;
+  inset-inline-end: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  background-color: #fff;
+  border-radius: 50% !important; /* Garante que a bola central seja redonda */
+  box-shadow: 0 2px 4px 0 rgba(0, 35, 11, 0.2);
+  transition: all 0.2s ease-in-out;
+  content: "";
+}
+
+:where(.css-dev-only-do-not-override-3rel02).ant-switch.ant-switch-checked
+  .ant-switch-handle {
+  inset-inline-start: calc(100% - 30px);
+}
+
+/* Estilizando o Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 12px; /* Largura do scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent; /* Cor do track (fundo) */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2F81F7; /* Cor do thumb (barra de rolagem) */
+  border-radius: 6px; /* Arredondamento do thumb */
+  border: 3px solid transparent; /* Espaço ao redor do thumb */
+}
+
+.itforum{
+  color: #61CE70;
+  font-weight: bold;
+}
+
+.hpe-title{
+  color: #01A982;
+  font-weight: bold;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limita o texto a 3 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limita o texto a 3 linhas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide > div {
+  min-height: 350px;
+  max-height: 400px;
+  display: flex;
+  flex-direction: column;
+}
